@@ -1,11 +1,18 @@
+import java.lang.StringBuilder;
+import java.lang.String;
+import java.lang.*;
+
+//import org.apache.commons.lang.StringUtils;
+//import org.apache.commons.lang3.StringUtils;
 
 public class StringUtilities {
+    
     /**
      * @param input value to be returned
      * @return `input`
      */
     public String returnInput(String input) {
-        return null;
+        return input;
     }
 
     /**
@@ -14,7 +21,8 @@ public class StringUtilities {
      * @return the concatenation of `baseValue` and `valueToBeAdded`
      */
     public String concatenate(String baseValue, String valueToBeAdded) {
-        return null;
+        baseValue += valueToBeAdded;
+        return baseValue;
     }
 
     /**
@@ -22,7 +30,13 @@ public class StringUtilities {
      * @return identical string with characters in opposite order
      */
     public String reverse(String valueToBeReversed) {
-        return null;
+        //StringBuffer myString = new StringBuffer(valueToBeReversed);
+        //String reversedVal = myString.reverse();
+        StringBuilder myString = new StringBuilder(valueToBeReversed) ;
+        //System.out.println(myString);
+        //String nameRev = valueToBeReversed.reverse();
+        return myString.reverse().toString();
+        
     }
 
     /**
@@ -39,6 +53,7 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
+        //value.deleteCharAt(charToRemov
         return null;
     }
 
@@ -47,6 +62,12 @@ public class StringUtilities {
      * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        return null;
+        StringBuilder myString = new StringBuilder(sentence) ;
+        String lastWord = myString.substring(myString.lastIndexOf(" "),myString.length());
+        
+        //String lastWord = sentence.substring(lastIndexOf(" "),sentence.length());
+        //return lastWord;
+        //lastWord.deleteCharAt(int 0);
+        return lastWord.toString();
     }
 }
