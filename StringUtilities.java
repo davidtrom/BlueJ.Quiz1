@@ -53,7 +53,10 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        //value.deleteCharAt(charToRemov
+        /*StringBuilder myString = new StringBuilder(value);
+        
+        myString.deleteCharAt(charToRemove);
+        myString.toString(); */
         return null;
     }
 
@@ -68,6 +71,13 @@ public class StringUtilities {
         //String lastWord = sentence.substring(lastIndexOf(" "),sentence.length());
         //return lastWord;
         //lastWord.deleteCharAt(int 0);
-        return lastWord.toString();
+        //lastWord.copyValueOf(char[] letters, 
+        
+      
+        //lastWord.toString();
+        //lastWord.substring(1,lastWord.length());
+        //System.out.println(lastWord);
+        return null;
+       
     }
 }
