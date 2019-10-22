@@ -44,7 +44,11 @@ public class StringUtilities {
      * @return middle character of `word`
      */
     public Character getMiddleCharacter(String word) {
-        return null;
+        int wordLength = word.length();
+        //System
+        int mid=wordLength / 2;
+        char m = word.charAt(mid);
+        return m;
     }
 
     /**
@@ -53,11 +57,11 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        /*StringBuilder myString = new StringBuilder(value);
-        
-        myString.deleteCharAt(charToRemove);
-        myString.toString(); */
-        return null;
+        //StringBuilder myString = new StringBuilder(value);
+        String myString= value.replace(charToRemove.toString(),"");
+        //myString.deleteCharAt(charToRemove);
+        //myString.toString(); 
+        return myString;
     }
 
     /**
@@ -66,18 +70,11 @@ public class StringUtilities {
      */
     public String getLastWord(String sentence) {
         StringBuilder myString = new StringBuilder(sentence) ;
-        String lastWord = myString.substring(myString.lastIndexOf(" "),myString.length());
+        String lastWord = myString.substring(myString.lastIndexOf(" ")+1,myString.length());
+       
+        lastWord.toString();
         
-        //String lastWord = sentence.substring(lastIndexOf(" "),sentence.length());
-        //return lastWord;
-        //lastWord.deleteCharAt(int 0);
-        //lastWord.copyValueOf(char[] letters, 
-        
-      
-        //lastWord.toString();
-        //lastWord.substring(1,lastWord.length());
-        //System.out.println(lastWord);
-        return null;
+        return lastWord;
        
     }
 }
